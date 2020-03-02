@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Rubik+Mono+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Rot 13 Cipher</h1>
+    <p>ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet. ROT13 is a special case of the Caesar cipher which was developed in ancient Rome.</p>
+        <a href="https://en.wikipedia.org/wiki/ROT13">From Wikipedia</a>
+    <p>Enter a cipher below and click the button to convert it into English.</p>
+        <input type="text" id="cipher" class="center">
+        <br>
+        <button class="center" onclick="displayAnswer(document.getElementById('cipher').value)">Convert to English</button>
+        <div id="answer">
+
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
